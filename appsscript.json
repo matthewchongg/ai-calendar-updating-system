@@ -1,0 +1,28 @@
+{
+  "timeZone": "Asia/Hong_Kong",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.modify",
+    "https://www.googleapis.com/auth/calendar",
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/script.scriptapp"
+  ],
+  "urlFetchWhitelist": [
+    "https://generativelanguage.googleapis.com/"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Calendar Assistant",
+      "logoUrl": "https://lh3.googleusercontent.com/d/13q_N6KqGYV5N9JHvCIkgJW_6FX2nyHbD",
+      "homepageTrigger": {
+        "runFunction": "buildHomepageCard"
+      }
+    },
+    "gmail": {},
+    "calendar": {}
+  }
+}
